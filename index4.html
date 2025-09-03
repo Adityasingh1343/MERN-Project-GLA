@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      border: 4px solid black;
+      padding: 20px;
+      height: 60vh;
+      width: 20vw;
+      position: relative; 
+      display: flex;
+      /* justify-content: center;  */
+      align-items: center;     
+    }
+
+    .box {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 10px;
+      font-size: 20px;
+      /* z-index: 2;  */
+      
+    }
+
+    .circles {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;    
+      gap: 20px;              
+    }
+
+    .circle {
+      height: 100px;
+      width: 100px;
+      background-color: blue;
+      border-radius: 50%;
+    }
+    img{
+        object-fit: cover;
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <fieldset class="container">
+    <legend >boxes</legend>
+    <div class="circles">
+      <div class="circle"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg" alt="" ></div>
+      <div class="circle"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg" alt=""></div>
+      <div class="circle"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Dog_Breeds.jpg" alt=""></div>
+    </div>
+  </fieldset>
+</body>
+</html>
